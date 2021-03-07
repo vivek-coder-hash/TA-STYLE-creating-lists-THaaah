@@ -41,3 +41,140 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+*,
+*::before,
+*::after  {
+    box-sizing: border-box;
+}
+
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.clearfix::before , .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stretch {
+    align-items: stretch;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+
+
+.navbar {
+    background-color: orange;
+    
+    padding: 32px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 32px;
+    color: white;
+    font-weight: 700;
+}
+
+
+.menu {
+    background-color: #035878;
+    color: white;
+    font-size: 24px;
+    padding: 32px 0;
+    padding-left: 60px;
+    width: 32%;
+}
+
+.navbar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol ,ul {
+    padding-left: 40px;
+}
+
+.menu li {
+    line-height: 2;
+}
+
+
+.menu-wrapper {
+    padding: 60px 0;
+}
+
+.sub-menu {
+    list-style: square;
+}
+
+
+.list-style-image {
+    list-style-image: url(); 
+    
+}
+
+
+dl {
+    font-size: 20px;
+}
+
+dt {
+    font-size: 32px;
+}
+
+dd{
+    margin-left: 40px;
+    margin-bottom: 32px;
+}
+
+
+.footer {
+    padding: 40px 0;
+    background-color: black;
+}
+
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer a {
+    color: white;
+    margin-right: 32px;
+    font-size: 24px;
+    text-decoration: none;
+}
